@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Polytopia Loading</title>
+	<link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div id="player"></div>
+	<div id="overlay"></div>
+	
+	<div id="status-container">
+		<div id="status">Подключаемся к мечте...</div>
+		<div id="loading">
+			<div id="loading-progress"></div>
+		</div>
+		<div id="messages"></div>
+	</div>
+
+	<div id="music">
+		<div id="music-name"></div>
+	</div>
+
+	<script>
+
+		document.addEventListener('click', musicPlay);
+		function musicPlay() {
+			var vid = document.querySelectorAll( 'audio' );
+			[].forEach.call(vid, function(vid) { 
+				vid.paused ? vid.play() : vid.pause() ;					
+			});
+		}
+
+	</script>
+
+	<script src="js/lib/jquery-2.1.1.min.js"></script>
+	<script src="js/lib/jquery.backstretch.min.js"></script>
+	<script src="js/config.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>
