@@ -13,7 +13,7 @@ var l_serverImage = "images/logo.png";
 
 /*Custom server name configuration
 Leave it blank for automatic server name*/
-var l_serverName = "Polytopia Project";
+var l_serverName = "Классный РП";
 
 /*Use a video for the background?
 Otherwise it will just use images*/
@@ -106,10 +106,7 @@ var l_messagesEnabled = true;
 
 /*Enter your custom messages below*/
 var l_messages = [
-"Не кричи в голосовой чат.",
-"Запрещено врать/клеветать администрации.",
-"Спам пропами запрещен, кроме того, пропы разбросанные по карте будут засчитаны как спам!",
-"Запрещено строить провокационные постройки."
+"",
 ];
 
 /*Random message order?*/
