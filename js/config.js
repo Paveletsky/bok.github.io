@@ -110,7 +110,7 @@ var l_messages = [
 ];
 
 /*Random message order?*/
-var l_messagesRandom = true;
+var l_messagesRandom = false;
 
 /*Delay between message changes
 in milliseconds*/
