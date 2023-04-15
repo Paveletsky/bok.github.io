@@ -125,7 +125,7 @@ $(function() {
 		setServerName("<img src='"+l_serverImage+"'>");
 
 	if (l_bgOverlay)
-		$("#overlay").css("background-image", "url('images/overlay.png')");
+		$("#overlay").css("background-image", "url('images/overlay.png')", "rgba(0, 0, 0, 50)");
 
 	$("#overlay").css("background-color", "rgba(0,0,0,"+(l_bgDarkening/100)+")");
 });
