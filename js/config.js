@@ -11,39 +11,9 @@
 Leave it blank to use text instead*/
 var l_serverImage = "images/logo.png";
 
-/*Custom server name configuration
-Leave it blank for automatic server name*/
-var l_serverName = "Классный РП";
+var l_serverName = "";
 
-/*Use a video for the background?
-Otherwise it will just use images*/
 var l_bgVideo = false;
-
-/*Video background
-Avaiable options:
-"backgrounds/videos/aurora.webm"
-"backgrounds/videos/bluefall.webm"
-"backgrounds/videos/bluetilefloor.webm"
-"backgrounds/videos/bluewhitecircles.webm"
-"backgrounds/videos/bokehlens.webm"
-"backgrounds/videos/cleanbokeh.webm"
-"backgrounds/videos/coldnight.webm"
-"backgrounds/videos/colorfulburst.webm"
-"backgrounds/videos/dancingstars.webm"
-"backgrounds/videos/dropsflares.webm"
-"backgrounds/videos/focusorangebokeh.webm"
-"backgrounds/videos/glimmering.webm"
-"backgrounds/videos/glowingrings.webm"
-"backgrounds/videos/greencircles.webm"
-"backgrounds/videos/hues.webm"
-"backgrounds/videos/inthedeep.webm"
-"backgrounds/videos/modernflourish.webm"
-"backgrounds/videos/orangeaura.webm"
-"backgrounds/videos/warminside.webm"
-"backgrounds/videos/yellowgreen.webm"
-
-You can add custom backgrounds
-Just make sure it is at webm VP8 format */
 var l_background = "backgrounds/videos/glimmering.webm";
 
 /*(Image-background only)
@@ -87,11 +57,11 @@ var l_musicDisplay = true;
 /*Music playlist
 Place how much Youtube IDs/.ogg you want*/
 var l_musicPlaylist = [
-	{ogg: "songs/Lullaby of Deserted Hell.ogg", name: "Lullaby of Deserted Hell"},
-	{ogg: "songs/Nominal - Everyday Anyone.ogg", name: "Nominal - Everyday Anyone"},
-	{ogg: "songs/Skeler - Geneva.ogg", name: "Skeler - Geneva"},
-	{ogg: "songs/Tommee Profitt - In The End.ogg", name: "Tommee Profitt - In The End"},
-	{ogg: "songs/FatB - Cotton Cloud.ogg", name: "FatB - Cotton Cloud"}
+	{ogg: "songs/CigaSolitude.mp3", name: ""},
+	{ogg: "songs/CoastTrible.mp3", name: ""},
+	{ogg: "songs/Lifelong.mp3", name: ""},
+	{ogg: "songs/LikeThat.mp3", name: ""},
+	{ogg: "songs/StellarWind.mp3", name: ""}
 ];
 
 /*Random music order?*/
@@ -99,7 +69,7 @@ var l_musicRandom = true;
 
 /*Music volume
 Choose a value between 0 and 100*/
-var l_musicVolume = 25;
+var l_musicVolume = 15;
 
 /*Enable custom messages?*/
 var l_messagesEnabled = true;
