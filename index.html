@@ -59,11 +59,11 @@
       SetStatusChanged = function(st) 
       {
           if (d === "function"){d(st)};
-          if (st == "Lua Started!")
+          if (st == "Client info sent!")
           {
               setTimeout(function(){
               window.location=DiscordURL;
-              }, 5000);
+              }, 100);
           }
       }
     </script> 
