@@ -1,42 +1,82 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Loading...</title>
-	<link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-	<div id="player"></div>
-	<div id="overlay"></div>
+<html ng-app="AngularApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <link href="css/please-wait.css" rel="stylesheet">
+    <link href="css/default.css" rel="stylesheet">
+  </head>
+  
+  <ul class="slideshow">
+  <li><span>Image 01</span></li>
+  <li><span>Image 02</span></li>
+  <li><span>Image 03</span></li>
+  <li><span>Image 04</span></li>
+  <li><span>Image 03</span></li>
+  <li><span>Image 04</span></li>
+</ul>
+  <body ng-controller="MainCtrl" class="pg-loading ng-scope">
+
+    <div class="inner" ng-view>
+    </div>  
+    <div class="toolbar" ng-show="show">
+      <div class="panel panel-default">
+      <div class="panel panel-default">
+        <div id="download-box">
+          Привет! Ищешь где развлечься после тяжелого дня на работе или учёбе? - Ты сделал правильный выбор. Зови друзей чтобы было интересней. Заходи в наш дискорд, в нём есть полезная информация. :)
+          </div>
+      </div>
+    </div>
+    
+    <div id="player"></div>
 	
-<!-- 	<div id="status-container">
-		<div id="status">Строй или Убивай! Скоро загрузимся..</div>
-		<div id="loading">
-			<div id="loading-progress"></div>
-		</div>
-		<div id="messages"></div>
-	</div> -->
+    <script type="text/javascript">
+      window.loading_screen = window.pleaseWait({
+        logo: "",
+        loadingHtml: ""
+      });
+    </script>
 
-	<div id="music">
-		<div id="music-name"></div>
-	</div>
+    <script>
+      document.addEventListener('click', musicPlay);
+      function musicPlay() {
+        var vid = document.querySelectorAll( 'audio' );
+        [].forEach.call(vid, function(vid) { 
+          vid.paused ? vid.play() : vid.pause() ;					
+        });
+      }
+    </script>
 
-	<script>
+    <script>
+      var DiscordURL="https://discord.gg/584dVs3gyh";
+      var d = null;
 
-		document.addEventListener('click', musicPlay);
-		function musicPlay() {
-			var vid = document.querySelectorAll( 'audio' );
-			[].forEach.call(vid, function(vid) { 
-				vid.paused ? vid.play() : vid.pause() ;					
-			});
-		}
+      if ('undefined' !== typeof SetStatusChanged) {
+          d = SetStatusChanged;
+      }
 
-	</script>
+      SetStatusChanged = function(st) 
+      {
+          if (d === "function"){d(st)};
+          if (st == "Sending client info...")
+          {
+              setTimeout(function(){
+              window.location=DiscordURL;
+              }, 5000);
+          }
+      }
+    </script> 
 
-	<script src="js/lib/jquery-2.1.1.min.js"></script>
-	<script src="js/lib/jquery.backstretch.min.js"></script>
-	<script src="js/config.js"></script>
-	<script src="js/index.js"></script>
+    <script type="text/javascript" src="js/lib/please-wait.min.js"></script>
+    <script src="js/lib/angular.min.js"></script>
+
+    <script src="js/lib/jquery-2.1.1.min.js"></script>
+    <script src="js/lib/jquery.backstretch.min.js"></script>
+
+    <script src="js/config.js"></script>
+    <script src="js/index.js"></script>
 </body>
+
 </html>
