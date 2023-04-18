@@ -1,6 +1,7 @@
 #player {
 	position: absolute;
-	left: -800px; top: -800px;
+	left: 0px; top: 0px;
+  opacity: 0;
 	z-index: -99;
 }
 
@@ -114,7 +115,7 @@ body {
 	width: 378px;
 	right: 3px; 
 	padding: 10px;
-	bottom: 90px;
+	bottom: 80px;
     color: #bfbfbf;
     font-size: 13px;
 	background-color: #6b6f71;
@@ -127,7 +128,7 @@ body {
     width: 378px;
     right: 3px;
     padding: 10px;
-    bottom: 180px;
+    bottom: 170px;
     color: #bfbfbf;
     font-size: 13px;
     background-color: #6b6f71;
