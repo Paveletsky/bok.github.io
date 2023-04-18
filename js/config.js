@@ -6,7 +6,8 @@ var l_musicPlaylist = [
 	{ogg: "songs/CoastTrible.mp3", name: ""},
 	{ogg: "songs/Lifelong.mp3", name: ""},
 	{ogg: "songs/LikeThat.mp3", name: ""},
-	{ogg: "songs/StellarWind.mp3", name: ""}
+	{ogg: "songs/StellarWind.mp3", name: ""},
+	{ogg: "songs/JustBreathing.mp3", name: ""},
 ];
 
 var l_musicRandom = true;
