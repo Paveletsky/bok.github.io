@@ -11,4 +11,4 @@ var l_musicPlaylist = [
 ];
 
 var l_musicRandom = true;
-var l_musicVolume = 15;
+var l_musicVolume = 5;
