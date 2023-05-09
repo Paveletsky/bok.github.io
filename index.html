@@ -1,52 +1,49 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    
-    <link href="css/default.css" rel="stylesheet">
-  </head>
+    <head>
+        <meta charset="utf-8">        
+        <link rel="stylesheet" href="css/default.css">
+    </head>
 
-  <body>
-    <script type="text/javascript" src="js/lib/please-wait.min.js"></script>
-    <script src="js/lib/angular.min.js"></script>
+    <body>
+        <script type="text/javascript" src="js/lib/please-wait.min.js"></script>
+        <script src="js/lib/angular.min.js"></script>
 
-    <script src="js/lib/jquery-2.1.1.min.js"></script>
-    <script src="js/lib/jquery.backstretch.min.js"></script>
+        <script src="js/lib/jquery-2.1.1.min.js"></script>
+        <script src="js/lib/jquery.backstretch.min.js"></script>
 
-    <script async src="js/config.js"></script>
-    <script async src="js/index.js"></script>
+        <script async src="js/config.js"></script>
+        <script async src="js/index.js"></script>
 
-    <div id="player"></div>
-    <div id="overlay"></div>
+        <div id="player"></div>
+        <div id="overlay"></div>
 
-      <div class="toolbar" ng-show="show">
-        <div id="download-box">
-            Мы открылись недавно, не расстраивайся, если не нашел своего любимого аддона у нас, ты всегда можешь предложить его добавление на нашем дискорд-сервере: https://discord.gg/584dVs3gyh
+        <div class="toolbar" ng-show="show">
+            <div id="download-box">
+                Мы открылись недавно, не расстраивайся, если не нашел своего любимого аддона у нас, ты всегда можешь предложить его добавление на нашем дискорд-сервере: https://discord.gg/584dVs3gyh
+            </div>
+
+            <div id="download-box2">
+                Привет! Устал после нудной работы или учебы, хочешь развлечься? - тогда добро пожаловать на Строй или Убивай! <br><br>Вступай в наш дискорд-сервер, у нас дружное коммьюнити, с которым приятно поболтать    
+            </div>
         </div>
+        
+        <script type="text/javascript">
+            window.loading_screen = window.pleaseWait({
+            logo: "",
+            loadingHtml: ""
+            });
+        </script>
 
-        <div id="download-box2">
-            Привет! Устал после нудной работы или учебы, хочешь развлечься? - тогда добро пожаловать на Строй или Убивай! <br><br>Вступай в наш дискорд-сервер, у нас дружное коммьюнити, с которым приятно поболтать    
-        </div>
-      </div>
-      
-      <script type="text/javascript">
-        window.loading_screen = window.pleaseWait({
-          logo: "",
-          loadingHtml: ""
-        });
-      </script>
-
-      <script>
-        document.addEventListener('click', musicPlay);
-        function musicPlay() {
-          var vid = document.querySelectorAll( 'audio' );
-          [].forEach.call(vid, function(vid) { 
-            vid.paused ? vid.play() : vid.pause() ;					
-          });
-        }
-      </script>
+        <script>
+            document.addEventListener('click', musicPlay);
+            function musicPlay() {
+            var vid = document.querySelectorAll( 'audio' );
+            [].forEach.call(vid, function(vid) { 
+                vid.paused ? vid.play() : vid.pause() ;					
+            });
+            }
+        </script>
   </body>
 </html>
