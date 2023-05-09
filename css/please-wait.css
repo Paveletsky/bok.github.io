@@ -61,9 +61,9 @@ body.pg-loading {
   line-height: 200px;
 	color: rgba(255,255,255, 0.8);
 }
-.slideshow li:nth-child(1) span { background-image: url(../images/bok.png) }
+.slideshow li:nth-child(1) span { background-image: url(../images/ww2/4.jpg) }
 .slideshow li:nth-child(2) span {
-    background-image: url(../images/2.png);
+    background-image: url(../images/ww2/1.jpg);
     -webkit-animation-delay: 6s;
     -moz-animation-delay: 6s;
     -o-animation-delay: 6s;
@@ -71,7 +71,7 @@ body.pg-loading {
     animation-delay: 6s;
 }
 .slideshow li:nth-child(3) span {
-    background-image: url('../images/1.png');
+    background-image: url(../images/ww2/5.jpg);
     -webkit-animation-delay: 12s;
     -moz-animation-delay: 12s;
     -o-animation-delay: 12s;
@@ -79,7 +79,7 @@ body.pg-loading {
     animation-delay: 12s;
 }
 .slideshow li:nth-child(4) span {
-    background-image: url(../images/3.jpg);
+    background-image: url(../images/ww2/2.jpg);
     -webkit-animation-delay: 18s;
     -moz-animation-delay: 18s;
     -o-animation-delay: 18s;
@@ -87,7 +87,7 @@ body.pg-loading {
     animation-delay: 18s;
 }
 .slideshow li:nth-child(5) span {
-    background-image: url(../images/4.jpg);
+    background-image: url(../images/ww2/3.jpg);
     -webkit-animation-delay: 24s;
     -moz-animation-delay: 24s;
     -o-animation-delay: 24s;
@@ -95,7 +95,7 @@ body.pg-loading {
     animation-delay: 24s;
 }
 .slideshow li:nth-child(6) span {
-    background-image: url(../images/5.png);
+    background-image: url(../images/bok.png);
     -webkit-animation-delay: 30s;
     -moz-animation-delay: 30s;
     -o-animation-delay: 30s;
