@@ -18,6 +18,9 @@ var youtubePlayer;
 var actualMusic = -1;
 
 $(function() {
+    if (l_bgImagesRandom)
+        l_bgImages = shuffle(l_bgImages);
+
     if (l_musicRandom)
         l_musicPlaylist = shuffle(l_musicPlaylist);
 
@@ -26,6 +29,11 @@ $(function() {
         if (l_musicDisplay)
             $("#music").fadeIn(2000);
     }
+
+    $("#overlay").css("background-image", "url('images/overlay.png')");
+    $("#overlay").css("background-color", "rgba(0,0,0, 0.2)");
+
+    $.backstretch(l_bgImages, {duration: 4000, fade: 3000});
 });
 
 function loadYoutube() {
