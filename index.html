@@ -9,12 +9,6 @@
     </head>
 
     <body>
-        <script defer src="js/lib/jquery-2.1.1.min.js"></script>
-        <script defer src="js/lib/jquery.backstretch.min.js"></script>
-
-        <script defer src="js/config.js"></script>
-        <script defer src="js/index.js"></script>
-
         <div id="player"></div>
         <div id="overlay"></div>
 
@@ -28,10 +22,18 @@
             </div>
         </div>
         
+        <script src="js/lib/jquery-2.1.1.min.js"></script>
+        <script src="js/lib/jquery.backstretch.min.js"></script>
+
+        <script src="js/config.js"></script>
+        <script src="js/index.js"></script>
+
         <script>
             document.addEventListener('click', musicPlay);
+
             function musicPlay() {
-            var vid = document.querySelectorAll( 'audio' );
+                var vid = document.querySelectorAll( 'audio' );
+
                 [].forEach.call(vid, function(vid) { 
                     vid.paused ? vid.play() : vid.pause() ;					
                 });
