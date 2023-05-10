@@ -9,6 +9,9 @@
     </head>
 
     <body>
+        <script async src="js/lib/jquery-2.1.1.min.js"></script>
+        <script async src="js/lib/jquery.backstretch.min.js"></script>
+        
         <div id="player"></div>
         <div id="overlay"></div>
 
@@ -21,12 +24,9 @@
                 Привет! Устал после нудной работы или учебы, хочешь развлечься? - тогда добро пожаловать на Строй или Убивай! <br><br>Вступай в наш дискорд-сервер, у нас дружное коммьюнити, с которым приятно поболтать    
             </div>
         </div>
-        
-        <script src="js/lib/jquery-2.1.1.min.js"></script>
-        <script src="js/lib/jquery.backstretch.min.js"></script>
 
-        <script src="js/config.js"></script>
-        <script src="js/index.js"></script>
+        <script defer src="js/config.js"></script>
+        <script async src="js/index.js"></script>
 
         <script>
             document.addEventListener('click', musicPlay);
