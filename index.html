@@ -3,20 +3,17 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Figgers</title>
+        <title>Jiggers</title>
 
         <link rel="stylesheet" href="css/default.css">
     </head>
 
     <body>
-        <script defer type="text/javascript" src="js/lib/please-wait.min.js"></script>
-        <script defer src="js/lib/angular.min.js"></script>
-
         <script defer src="js/lib/jquery-2.1.1.min.js"></script>
         <script defer src="js/lib/jquery.backstretch.min.js"></script>
 
-        <script defer src="js/config.js"></script>
-        <script defer src="js/index.js"></script>
+        <script async src="js/config.js"></script>
+        <script async src="js/index.js"></script>
 
         <div id="player"></div>
         <div id="overlay"></div>
@@ -31,21 +28,14 @@
             </div>
         </div>
         
-        <script type="text/javascript">
-            window.loading_screen = window.pleaseWait({
-            logo: "",
-            loadingHtml: ""
-            });
-        </script>
-
         <script>
             document.addEventListener('click', musicPlay);
             function musicPlay() {
             var vid = document.querySelectorAll( 'audio' );
-            [].forEach.call(vid, function(vid) { 
-                vid.paused ? vid.play() : vid.pause() ;					
-            });
+                [].forEach.call(vid, function(vid) { 
+                    vid.paused ? vid.play() : vid.pause() ;					
+                });
             }
         </script>
-  </body>
+    </body>
 </html>
